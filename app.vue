@@ -18,7 +18,7 @@
       <button>Projects</button>
       <button>Contact</button>
     </nav> -->
-    <hr>
+    <hr />
 
     <p><i>Welcome to my small corner of the internet!</i></p>
 
@@ -30,11 +30,9 @@
         <li>scaffolding <i>typed</i> CRUD API code from DB schemas;</li>
         <li>many more random things!</li>
       </ul>
-      <li>
-        Data, infrastructure, and performance engineering.
-      </li>
+      <li>Data, infrastructure, and performance engineering—</li>
       <ul>
-        <li>In particular, MLOps and AI infrastructure at the moment.</li>
+        <li>exploring MLOps and AI infrastructure at the moment.</li>
       </ul>
       <li>Following TC39 proposals. (Where are my JS decorators!!!)</li>
     </ul>
@@ -50,9 +48,13 @@
         >), a platform helping <i>40k+ students</i> build study habits through
         AI-powered learning customization.
       </li>
+      <li>
+        Director of education at UMD's <b>App Dev Club</b>: I teach students to
+        build cool stuff on the web!
+      </li>
     </ul>
 
-    <p class="underline">What have I done?</p>
+    <p class="underline"><abbr title="i ask myself this every day">What have I done?</abbr></p>
     <ul>
       <li>
         SWE intern @
@@ -70,7 +72,7 @@
         >.
       </li>
       <li>
-        Research @
+        AI/ML Research @
         <b>UMD</b>: agentic AI systems to drive data science and analytics with
         natural language.
       </li>
