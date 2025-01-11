@@ -13,11 +13,14 @@
         >raghav.m2014@gmail.com</a
       >
     </p>
-    <nav>
+    <!-- <nav>
       <button class="active">Overview</button>
       <button>Projects</button>
       <button>Contact</button>
-    </nav>
+    </nav> -->
+    <hr>
+
+    <p><i>Welcome to my small corner of the internet!</i></p>
 
     <p class="underline">Current interests!</p>
     <ul>
@@ -27,20 +30,13 @@
         <li>scaffolding <i>typed</i> CRUD API code from DB schemas;</li>
         <li>many more random things!</li>
       </ul>
-      <li>Data and infrastructure engineering (particularly ML infra right now).</li>
-      <li>Following TC39 proposals.</li>
+      <li>
+        Data, infrastructure, and performance engineering.
+      </li>
       <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://tc39.es/proposal-temporal/docs/index.html"
-            >Temporal</a
-          >!!
-          <a href="https://github.com/tc39/proposal-decorators" target="_blank"
-            >Decorators</a
-          >!!
-        </li>
+        <li>In particular, MLOps and AI infrastructure at the moment.</li>
       </ul>
+      <li>Following TC39 proposals. (Where are my JS decorators!!!)</li>
     </ul>
 
     <p class="underline">What am I up to?</p>
@@ -59,28 +55,27 @@
     <p class="underline">What have I done?</p>
     <ul>
       <li>
-        <i>[Sept 2024 - Dec 2024]</i> — SWE intern at
-        <b>Palantir Technologies</b>
-        doing frontend and performance engineering to empower
+        SWE intern @
+        <b>Palantir Technologies</b>: frontend and performance to empower
         <a target="_blank" href="https://www.palantir.com/platforms/gotham/"
           >unique defense workflows</a
         >.
       </li>
       <li>
-        <i>[May 2024 - Aug 2024]</i> — SDE intern at
-        <b>Amazon Web Services</b> doing backend, infrastructure, and low-level
-        development on
+        SDE intern @
+        <b>Amazon Web Services</b>: backend, infra, and low-level development on
         <a
           href="https://docs.aws.amazon.com/ebs/latest/APIReference/Welcome.html"
           >EBS direct APIs</a
         >.
       </li>
       <li>
-        <i>[May 2024 - Aug 2024]</i> — Researching agentic AI systems to drive
-        data science and analytics with natural language.
+        Research @
+        <b>UMD</b>: agentic AI systems to drive data science and analytics with
+        natural language.
       </li>
       <li>
-        Extensive professional experience is on my
+        ... Extensive professional experience is on my
         <a target="_blank" href="https://www.linkedin.com/in/raghav--misra/"
           >LinkedIn</a
         >!
@@ -92,7 +87,7 @@
 <style>
 :root {
   font-size: 16px;
-  padding: 2rem;
+  padding: 4rem;
 
   --dark: #333333;
   --light: #eff9f0;
