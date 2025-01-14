@@ -45,7 +45,7 @@
     <ul>
       <li>
         SWE intern @
-        <b>Palantir Technologies</b>: frontend and performance to empower
+        <b>Palantir Technologies</b>: frontend and performance engineering to empower
         <a target="_blank" href="https://www.palantir.com/platforms/gotham/"
           >unique defense workflows</a
         >.
