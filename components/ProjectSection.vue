@@ -7,7 +7,7 @@ const props = defineProps<{ project: ProjectData }>();
 <template>
   <div class="experience">
     <div class="title">
-      <h3>
+      <h3 class="serif">
         {{ props.project.title }}
       </h3>
       <a target="_blank" :href="props.project.url[1]">{{

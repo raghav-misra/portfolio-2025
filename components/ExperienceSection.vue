@@ -6,8 +6,8 @@ const props = defineProps<{ experience: ExperienceData }>();
 
 <template>
   <div class="experience">
-    <h3>
-      {{ props.experience.role }} @ <b>{{ props.experience.company }}</b>
+    <h3 class="serif">
+      {{ props.experience.role }} @ <b class="serif">{{ props.experience.company }}</b>
     </h3>
     <i
       >{{ props.experience.dateRange[0] }} —
