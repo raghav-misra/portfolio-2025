@@ -1,3 +1,13 @@
+<script setup lang="ts">
+import type { TabName } from "./types";
+
+const currentTab = ref<TabName>("overview");
+
+const goto = (newTab: TabName) => {
+  currentTab.value = newTab;
+};
+</script>
+
 <template>
   <main>
     <h1 class="serif">Hi, I'm Raghav!</h1>
@@ -13,172 +23,34 @@
         >raghav.m2014@gmail.com</a
       >
     </p>
-    <!-- <nav>
-      <button class="active">Overview</button>
-      <button>Projects</button>
-      <button>Contact</button>
-    </nav> -->
-    <hr />
+    <nav>
+      <button
+        @click="goto('overview')"
+        :class="currentTab === 'overview' && 'active'"
+      >
+        Overview
+      </button>
+      <button
+        @click="goto('experience')"
+        :class="currentTab === 'experience' && 'active'"
+      >
+        Experience
+      </button>
+      <button
+        @click="goto('projects')"
+        :class="currentTab === 'projects' && 'active'"
+      >
+        Projects
+      </button>
+    </nav>
 
-    <p><i>Welcome to my small corner of the internet!</i></p>
-
-    <p class="underline">What am I up to?</p>
-    <ul>
-      <li>
-        Undergraduate student at UMD studying computer science and mathematics.
-      </li>
-      <li>
-        Building <b>StudyKit</b> (<a target="_blank" href="https://studykit.app"
-          >studykit.app</a
-        >), a platform helping <i>40k+ students</i> build study habits through
-        AI-powered learning customization.
-      </li>
-      <li>
-        Director of education at UMD's <b>App Dev Club</b>: I teach students to
-        build cool stuff on the web!
-      </li>
-    </ul>
-
-    <p class="underline">
-      <abbr title="i ask myself this every day">What have I done?</abbr>
-    </p>
-    <ul>
-      <li>
-        SWE intern @
-        <b>Palantir Technologies</b>: frontend and performance engineering to empower
-        <a target="_blank" href="https://www.palantir.com/platforms/gotham/"
-          >unique defense workflows</a
-        >.
-      </li>
-      <li>
-        SDE intern @
-        <b>Amazon Web Services</b>: backend, infra, and low-level development on
-        <a
-          href="https://docs.aws.amazon.com/ebs/latest/APIReference/Welcome.html"
-          >EBS direct APIs</a
-        >.
-      </li>
-      <li>
-        AI/ML Research @
-        <b>UMD</b>: agentic AI systems to drive data science and analytics with
-        natural language.
-      </li>
-      <li>
-        ... Extensive professional experience is on my
-        <a target="_blank" href="https://www.linkedin.com/in/raghav--misra/"
-          >LinkedIn</a
-        >!
-      </li>
-    </ul>
-
-    <p class="underline">Current interests!</p>
-    <ul>
-      <li>Accelerating my software development with more software—</li>
-      <ul>
-        <li>generating UI markup and styling from natural language;</li>
-        <li>scaffolding <i>typed</i> CRUD API code from DB schemas;</li>
-        <li>many more random things!</li>
-      </ul>
-      <li>Data, infrastructure, and performance engineering—</li>
-      <ul>
-        <li>exploring MLOps and AI infrastructure at the moment.</li>
-      </ul>
-      <li>Following TC39 proposals. (Where are my JS decorators!!!)</li>
-    </ul>
+    <Transition name="slide-fade" mode="out-in">
+      <TabOverview v-if="currentTab === 'overview'" @tab-changed="goto" />
+      <TabExperience
+        v-else-if="currentTab === 'experience'"
+        @tab-changed="goto"
+      />
+      <TabProjects v-else @tab-changed="goto" />
+    </Transition>
   </main>
 </template>
-
-<style>
-:root {
-  font-size: 16px;
-  padding: 4rem;
-
-  --dark: #333333;
-  --light: #eff9f0;
-  --link: #6883ba;
-  --shadow: #33333328;
-
-  background: var(--light);
-}
-
-@media screen and (max-width: 550px) {
-  :root {
-    padding: 1rem;
-  }
-}
-
-@media screen and (max-width: 410px) {
-  :root {
-    font-size: 14px;
-  }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Figtree", Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 400;
-  color: var(--dark);
-}
-
-b {
-  font-weight: 600;
-}
-
-.serif {
-  font-family: "PT Serif", "Times New Roman", Times, serif;
-}
-
-main {
-  max-width: 768px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-ul {
-  padding-left: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-nav {
-  display: flex;
-  border: 1px var(--dark) solid;
-  border-left: none;
-  border-right: none;
-  padding: 0.5rem;
-  gap: 0.25rem;
-  justify-content: space-around;
-}
-
-nav button {
-  background: none;
-  border: none;
-  font-weight: 600;
-  font-size: 1.125rem;
-}
-
-nav button.active {
-  color: var(--link);
-}
-
-nav button:hover {
-  color: var(--link);
-  text-decoration: underline;
-}
-
-.underline {
-  text-decoration: underline solid var(--shadow);
-}
-
-a {
-  color: var(--link);
-}
-
-a:hover {
-  text-shadow: var(--shadow) 1px 1px 1px;
-}
-</style>
