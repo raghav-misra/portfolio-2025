@@ -22,21 +22,6 @@
 
     <p><i>Welcome to my small corner of the internet!</i></p>
 
-    <p class="underline">Current interests!</p>
-    <ul>
-      <li>Accelerating my software development with more software—</li>
-      <ul>
-        <li>generating UI markup and styling from natural language;</li>
-        <li>scaffolding <i>typed</i> CRUD API code from DB schemas;</li>
-        <li>many more random things!</li>
-      </ul>
-      <li>Data, infrastructure, and performance engineering—</li>
-      <ul>
-        <li>exploring MLOps and AI infrastructure at the moment.</li>
-      </ul>
-      <li>Following TC39 proposals. (Where are my JS decorators!!!)</li>
-    </ul>
-
     <p class="underline">What am I up to?</p>
     <ul>
       <li>
@@ -54,7 +39,9 @@
       </li>
     </ul>
 
-    <p class="underline"><abbr title="i ask myself this every day">What have I done?</abbr></p>
+    <p class="underline">
+      <abbr title="i ask myself this every day">What have I done?</abbr>
+    </p>
     <ul>
       <li>
         SWE intern @
@@ -82,6 +69,21 @@
           >LinkedIn</a
         >!
       </li>
+    </ul>
+
+    <p class="underline">Current interests!</p>
+    <ul>
+      <li>Accelerating my software development with more software—</li>
+      <ul>
+        <li>generating UI markup and styling from natural language;</li>
+        <li>scaffolding <i>typed</i> CRUD API code from DB schemas;</li>
+        <li>many more random things!</li>
+      </ul>
+      <li>Data, infrastructure, and performance engineering—</li>
+      <ul>
+        <li>exploring MLOps and AI infrastructure at the moment.</li>
+      </ul>
+      <li>Following TC39 proposals. (Where are my JS decorators!!!)</li>
     </ul>
   </main>
 </template>
