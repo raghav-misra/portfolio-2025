@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import type { TabEmits } from "~/types";
-import { experiences } from "~/content/experiences";
+import { projects } from "~/content/projects";
 
 const emit = defineEmits<TabEmits>();
 </script>
 
 <template>
   <div class="main">
-    <p>Soon!</p>
+    <ProjectSection v-for="project of projects" :project="project" />
   </div>
 </template>

@@ -13,9 +13,7 @@ const props = defineProps<{ experience: ExperienceData }>();
       >{{ props.experience.dateRange[0] }} —
       {{ props.experience.dateRange[1] }}</i
     >
-    <ul>
-      <li>{{ props.experience.content }}</li>
-    </ul>
+    <p>{{ props.experience.content }}</p>
   </div>
 </template>
 
