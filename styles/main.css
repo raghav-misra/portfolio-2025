@@ -19,6 +19,7 @@
   --shadow: #33333328;
 
   background: var(--light);
+  overflow-y: scroll;
 }
 
 body {
