@@ -46,7 +46,7 @@ export const experiences: ExperienceData[] = [
   },
   {
     role: "Software Engineer Intern",
-    company: "Hack+",
+    company: "HackPlus",
     dateRange: ["Jan 2020", "Jan 2022"],
     content: "Mobile and Backend Engineering",
   },
