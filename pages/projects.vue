@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import type { TabEmits } from "~/types";
 import { projects } from "~/content/projects";
-
-const emit = defineEmits<TabEmits>();
 </script>
 
 <template>

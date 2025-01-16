@@ -1,11 +1,15 @@
 <script setup lang="ts">
-import type { TabName } from "./types";
+const route = useRoute();
 
-const currentTab = ref<TabName>("overview");
+const currentTab = computed(() => {
+  const choices = ["experience", "projects"];
 
-const goto = (newTab: TabName) => {
-  currentTab.value = newTab;
-};
+  for (let choice of choices) {
+    if (route.path.includes(choice)) return choice;
+  }
+
+  return "overview";
+});
 </script>
 
 <template>
@@ -25,19 +29,19 @@ const goto = (newTab: TabName) => {
     </p>
     <nav>
       <button
-        @click="goto('overview')"
+        @click="navigateTo('/')"
         :class="currentTab === 'overview' && 'active'"
       >
         Overview
       </button>
       <button
-        @click="goto('experience')"
+        @click="navigateTo('/experience')"
         :class="currentTab === 'experience' && 'active'"
       >
         Experience
       </button>
       <button
-        @click="goto('projects')"
+        @click="navigateTo('/projects')"
         :class="currentTab === 'projects' && 'active'"
       >
         Projects
@@ -45,12 +49,7 @@ const goto = (newTab: TabName) => {
     </nav>
 
     <Transition name="slide-fade" mode="out-in">
-      <TabOverview v-if="currentTab === 'overview'" @tab-changed="goto" />
-      <TabExperience
-        v-else-if="currentTab === 'experience'"
-        @tab-changed="goto"
-      />
-      <TabProjects v-else @tab-changed="goto" />
+      <NuxtPage />
     </Transition>
   </main>
 </template>

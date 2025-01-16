@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import type { TabEmits } from "~/types";
-
-const emit = defineEmits<TabEmits>();
+import { navigateTo } from "nuxt/app";
 </script>
 
 <template>
@@ -48,11 +46,11 @@ const emit = defineEmits<TabEmits>();
       </li>
       <li>
         ... Swap to the
-        <a @click="emit('tabChanged', 'experience')" class="underline"
+        <a @click="navigateTo('/experience')" class="underline"
           >Experience</a
         >
         or
-        <a @click="emit('tabChanged', 'projects')" class="underline"
+        <a @click="navigateTo('/projects')" class="underline"
           >Projects</a
         >
         tabs to see more!
