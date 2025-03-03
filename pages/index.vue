@@ -16,7 +16,7 @@ import { navigateTo } from "nuxt/app";
         >), a platform helping <i>40k+ students</i> build study habits through
         AI-powered learning customization.
       </li>
-      <li>Incoming SWE intern @ <b>Google</b> this summer; returning to intern @ <b>Palantir</b> this fall.</li>
+      <!--<li>Incoming SWE intern @ <b>Google</b> this summer; returning to intern @ <b>Palantir</b> this fall.</li>-->
       <li>
         Director of education at UMD's <b>App Dev Club</b>: I teach students to
         build cool stuff on the web!
