@@ -6,23 +6,23 @@ const props = defineProps<{ experience: ExperienceData }>();
 
 <template>
   <div class="experience">
-    <div class="company-role-date">
+    <div class="company-heading">
       <img
         class="company-logo"
         :src="`/img/${props.experience.company
           .toLowerCase()
           .replaceAll(' ', '')}.jpg`"
       />
-      <h3 class="serif">
-        <b class="serif">{{ props.experience.company }}</b
-        ><br />
+      <div class="heading-text">
+        <div class="company-name-date">
+          <h3 class="serif">{{ props.experience.company }}</h3>
+          <i
+            >{{ props.experience.dateRange[0] }} —
+            {{ props.experience.dateRange[1] }}</i
+          >
+        </div>
         {{ props.experience.role }}
-        <br />
-      </h3>
-      <i
-        >{{ props.experience.dateRange[0] }} —
-        {{ props.experience.dateRange[1] }}</i
-      >
+      </div>
     </div>
     <p>{{ props.experience.content }}</p>
   </div>
@@ -37,19 +37,35 @@ const props = defineProps<{ experience: ExperienceData }>();
   border-bottom: 1px solid var(--shadow);
 }
 
-.company-role-date {
+.company-heading {
   display: flex;
   gap: 0.75rem;
 }
 
-.company-role-date .serif {
-  margin-right: auto;
+.heading-text {
+  flex: auto;
+}
+
+.company-name-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company-name-date h3 {
+  font-weight: bold;
 }
 
 .company-logo {
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 5px;
   border: 1px solid var(--shadow);
+}
+
+@media screen and (max-width: 550px) {
+  .company-logo {
+    display: none;
+  }
 }
 </style>

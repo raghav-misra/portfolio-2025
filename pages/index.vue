@@ -16,7 +16,7 @@ import { navigateTo } from "nuxt/app";
         >), a platform helping <i>40k+ students</i> build study habits through
         AI-powered learning customization.
       </li>
-      <!--<li>Incoming SWE intern @ <b>Google</b> this summer; returning to intern @ <b>Palantir</b> this fall.</li>-->
+      <li>Incoming SWE intern @ <b>Google</b> this summer; returning to intern @ <b>Palantir</b> this fall.</li>
       <li>
         Director of education at UMD's <b>App Dev Club</b>: I teach students to
         build cool stuff on the web!
@@ -29,7 +29,7 @@ import { navigateTo } from "nuxt/app";
         <b>Palantir Technologies</b>: frontend and performance engineering to
         empower
         <a target="_blank" href="https://www.palantir.com/platforms/gotham/"
-          >unique defense workflows</a
+          >defense workflows</a
         >.
       </li>
       <li>
@@ -47,27 +47,27 @@ import { navigateTo } from "nuxt/app";
       </li>
       <li>
         ... Swap to the
-        <a @click="navigateTo('/experience')" class="underline"
-          >Experience</a
-        >
+        <a @click="navigateTo('/experience')" class="underline">Experience</a>
         or
-        <a @click="navigateTo('/projects')" class="underline"
-          >Projects</a
-        >
+        <a @click="navigateTo('/projects')" class="underline">Projects</a>
         tabs to see more!
       </li>
     </BulletSection>
 
     <BulletSection title="Current interests!">
-      <li>Accelerating my software development with more software—</li>
+      <li>Experimenting with automating my software development—</li>
       <ul>
         <li>generating UI markup and styling from natural language;</li>
-        <li>scaffolding <i>typed</i> CRUD API code from DB schemas;</li>
-        <li>many more random things!</li>
+        <li>scaffolding typed CRUD API code from DB schemas;</li>
+        <li>other such random things!</li>
       </ul>
       <li>Data, infrastructure, and performance engineering—</li>
       <ul>
-        <li>exploring MLOps and AI infrastructure at the moment.</li>
+        <li>exploring MLOps and AI infrastructure at the moment;</li>
+        <li>
+          especially into web performance (talk to me for hours about Web
+          Workers)
+        </li>
       </ul>
       <li>
         Following TC39 proposals. (Nothing like waiting on the decorators

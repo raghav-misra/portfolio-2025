@@ -10,16 +10,14 @@ export default defineNuxtConfig({
           href: "https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap",
         },
       ],
-      title: "Raghav Misra",
+      title: "Raghav's Portfolio",
       meta: [
-        {
-          name: "description",
-          content: "I build software!",
-        },
-        {
-          name: "language",
-          content: "EN",
-        },
+        { name: "description", content: "I build software!" },
+        { name: "keywords", content: "hi,coding,tech,portfolio" },
+        { name: "robots", content: "index, follow" },
+        { "http-equiv": "Content-Type", content: "text/html; charset=utf-8" },
+        { name: "language", content: "English" },
+        { name: "author", content: "Raghav" },
       ],
     },
   },
