@@ -2,6 +2,13 @@ import type { ProjectData } from "~/types";
 
 export const projects: ProjectData[] = [
   {
+    title: "BudgetBuddy 💸",
+    url: ["Devpost", "https://devpost.com/software/budgetbuddy-3qvr78"],
+    description:
+      "BudgetBuddy links to your transactions and sends real-time alerts through a virtual pet that reacts to your spending, using AI to flag unusual activity and promote better habits.",
+    award: "Best Overall and Best Capital One Financial Hack @ Bitcamp 2025",
+  },
+  {
     title: "MoonDust 💫",
     url: [
       "Devpost",
@@ -9,7 +16,7 @@ export const projects: ProjectData[] = [
     ],
     description:
       "Financial management for startups. Provides investment recommendations based on technical and NLP-sentiment analysis, as well as ML-based transaction fraud detection.",
-    award: "Best Machine Learning Hack @ Bitcamp",
+    award: "Best Machine Learning Hack @ Bitcamp 2024",
   },
   {
     title: "Disasternaut 🤯",
