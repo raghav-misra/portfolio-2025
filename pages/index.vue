@@ -53,26 +53,5 @@ import { navigateTo } from "nuxt/app";
         tabs to see more!
       </li>
     </BulletSection>
-
-    <BulletSection title="Current interests!">
-      <li>Experimenting with automating my software development—</li>
-      <ul>
-        <li>generating UI markup and styling from natural language;</li>
-        <li>scaffolding typed CRUD API code from DB schemas;</li>
-        <li>other such random things!</li>
-      </ul>
-      <li>Data, infrastructure, and performance engineering—</li>
-      <ul>
-        <li>exploring MLOps and AI infrastructure at the moment;</li>
-        <li>
-          especially into web performance (talk to me for hours about Web
-          Workers)
-        </li>
-      </ul>
-      <li>
-        Following TC39 proposals. (Nothing like waiting on the decorators
-        proposal since middle school!)
-      </li>
-    </BulletSection>
   </div>
 </template>
