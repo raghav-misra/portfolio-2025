@@ -16,7 +16,6 @@ import { navigateTo } from "nuxt/app";
         >), a platform helping <i>40k+ students</i> build study habits through
         AI-powered learning customization.
       </li>
-      <li>Incoming SWE intern @ <b>Google</b> this summer; returning to intern @ <b>Palantir</b> this fall.</li>
       <li>
         Director of education at UMD's <b>App Dev Club</b>: I teach students to
         build cool stuff on the web!
@@ -25,12 +24,13 @@ import { navigateTo } from "nuxt/app";
 
     <BulletSection title="What have I done?">
       <li>
+        SWE intern @ <b>Google</b>: components and services to increase Google
+        Account sign-ins on Android Automotive.
+      </li>
+      <li>
         SWE intern @
-        <b>Palantir Technologies</b>: frontend and performance engineering to
-        empower
-        <a target="_blank" href="https://www.palantir.com/platforms/gotham/"
-          >defense workflows</a
-        >.
+        <b>Palantir Technologies</b>: frontend and performance engineering for
+        government data analytics workflows.
       </li>
       <li>
         SDE intern @
