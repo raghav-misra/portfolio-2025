@@ -27,12 +27,12 @@ export const experiences: ExperienceData[] = [
     content: "EBS Snapshots: Backend and Infrastructure Engineering",
   },
   {
-    role: "Research Intern, Applied AI",
+    role: "Machine Learning Researcher",
     company: "University of Maryland",
     dateRange: ["May. 2024", "Aug. 2024"],
     content: "AI Agents for Data Analytics",
   },
-  {
+  /*{
     role: "Full Stack Web Developer",
     company: "Stamp Student Union",
     dateRange: ["Aug. 2023", "May. 2024"],
@@ -55,5 +55,5 @@ export const experiences: ExperienceData[] = [
     company: "HackPlus",
     dateRange: ["Jan. 2020", "Jan. 2022"],
     content: "Mobile and Backend Engineering",
-  },
+  },*/
 ];
