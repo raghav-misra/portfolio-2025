@@ -2,17 +2,17 @@ import type { ExperienceData } from "~/types";
 
 export const experiences: ExperienceData[] = [
   {
-    role: "Software Engineer Intern",
-    company: "Google",
-    dateRange: ["May. 2025", "Aug. 2025"],
-    content: "Automotive Identity: Performance Engineering",
-  },
-  {
     role: "Co-Founder",
     company: "StudyKit",
     dateRange: ["Aug. 2023", "Present"],
     content:
       "40k+ users building healthy study habits worldwide @ studykit.app",
+  },
+  {
+    role: "Software Engineer Intern",
+    company: "Google",
+    dateRange: ["May. 2025", "Aug. 2025"],
+    content: "Automotive Identity: Performance Engineering",
   },
   {
     role: "Software Engineer Intern",
