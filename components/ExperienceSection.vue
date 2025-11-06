@@ -24,7 +24,7 @@ const props = defineProps<{ experience: ExperienceData }>();
         {{ props.experience.role }}
       </div>
     </div>
-    <p>{{ props.experience.content }}</p>
+    <!--<p>{{ props.experience.content }}</p>-->
   </div>
 </template>
 
