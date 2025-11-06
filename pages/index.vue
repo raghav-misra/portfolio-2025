@@ -7,43 +7,37 @@ import { navigateTo } from "nuxt/app";
     <p><i>Welcome to my small corner of the internet!</i></p>
 
     <BulletSection title="What am I up to?">
-      <li>
+      <!--<li>
         Undergraduate student at UMD studying computer science and mathematics.
-      </li>
+      </li>-->
       <li>
-        Building <b>StudyKit</b> (<a target="_blank" href="https://studykit.app"
+        Co-founded <b>StudyKit</b> (<a target="_blank" href="https://studykit.app"
           >studykit.app</a
-        >), a platform helping <i>40k+ students</i> build study habits through
+        >), a platform helping <i>over 100k students</i> build study habits through
         AI-powered learning customization.
       </li>
-      <li>
+      <li>Interested in AI agents (<i>pan to wall of Buzz Lightyears</i>), frontend performance engineering, and HPC/distributed systems!</li>
+      <!--<li>
         Director of education at UMD's <b>App Dev Club</b>: I teach students to
         build cool stuff on the web!
-      </li>
+      </li>-->
     </BulletSection>
 
     <BulletSection title="What have I done?">
       <li>
-        SWE intern @ <b>Google</b>: components and services to increase Google
-        Account sign-ins on Android Automotive.
+        (Tried to) increase user sign-ins in cars @ <b>Google</b>.
       </li>
       <li>
-        SWE intern @
-        <b>Palantir Technologies</b>: frontend and performance engineering for
-        government data analytics workflows.
+        Made stuff load faster in constrained ("edge") environments @ <b>Palantir</b>.
       </li>
       <li>
-        SDE intern @
-        <b>Amazon Web Services</b>: backend, infra, and low-level development on
-        <a
-          href="https://docs.aws.amazon.com/ebs/latest/APIReference/Welcome.html"
-          >EBS direct APIs</a
-        >.
+        Helped make more things happen at once ("throughput") @ <b>AWS</b>
       </li>
       <li>
-        AI/ML Research @
+        Researched how to make ChatGPT analyze data @ school.
+        <!--AI/ML Research @
         <b>UMD</b>: agentic AI systems to drive data science and analytics with
-        natural language.
+        natural language.-->
       </li>
       <li>
         ... Swap to the
