@@ -21,5 +21,5 @@ export default defineNuxtConfig({
       ],
     },
   },
-  css: ["~/styles/main.css"],
+  // css: ["~/styles/main.css"],
 });
