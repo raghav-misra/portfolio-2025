@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const route = useRoute();
+/*const route = useRoute();
 
 const currentTab = computed(() => {
   const choices = ["experience", "projects"];
@@ -9,11 +9,11 @@ const currentTab = computed(() => {
   }
 
   return "overview";
-});
+});*/
 </script>
 
 <template>
-  <main>
+<!--  <main>
     <h1 class="serif">Hi, I'm Raghav!</h1>
 
     <p>
@@ -51,5 +51,7 @@ const currentTab = computed(() => {
     <Transition name="slide-fade" mode="out-in">
       <NuxtPage />
     </Transition>
-  </main>
+  </main>-->
+  <h1>I like to code!</h1>
+  <img src="/meow.gif" />
 </template>
